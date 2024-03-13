@@ -1,5 +1,6 @@
 package com.targetindia.util;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class KeyboardUtil {
@@ -18,5 +19,11 @@ public class KeyboardUtil {
         System.out.print(message);
         Scanner sc = new Scanner(System.in);
         return sc.nextLine();
+    }
+
+    public static long getLong(String message) {
+        System.out.print(message);
+        Scanner sc= new Scanner(System.in);
+        return sc.nextLong();
     }
 }
